@@ -1,0 +1,45 @@
+div{
+	border: #000000 solid 1px;
+}
+div.add{
+	text-align: right;
+}
+div.lMenu, div.grayMenu{
+	background-color: #f4f4f4;
+}
+ul li{
+	list-style: none;
+}
+div.lMenu div.title {
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+}
+div.tMenu{
+	background-color: #2c2c2c;
+}
+.contasCheckList, .contasAvulsas{
+	margin-bottom: 2%;
+}
+div.rmView a.remove{
+	visibility: hidden;
+}
+div.boxUos{
+	text-align: center;
+}
+div.boxUos select{
+	width: 100%;
+}
+span.add{
+	float: right;
+}
+span.h10{
+	font-weight:normal;
+	border-bottom: 1px solid black;
+}
+.detCheckList{
+	display: none;
+}
+li.expand, li.rmView{
+	margin-left: 0px;
+}
