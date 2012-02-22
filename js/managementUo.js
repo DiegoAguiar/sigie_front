@@ -37,7 +37,7 @@ $(document).ready(function(){
 							/*$('.boxUos').html('Carregando');*/
 						},
 						success: function(data){
-							parent.jAlert("Exclus„o efetuada com sucesso!","Exclus„o",function(){
+							parent.jAlert("Exclus√£o efetuada com sucesso!","Exclus√£o",function(){
 								window.location=window.location;
 							});
 						},

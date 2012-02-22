@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="container_12">
-	<form name="form1" method="post" action="managementUoAct.cfm">
+	<form name="form1" method="post" action="/SIGIE/managementUoAct.cfm">
 		<div class="graymenu">
 			<div class="grid_12">Gerenciamento de grupos de Unidades Operacionais</div>
 			<div class="clear"></div>
@@ -26,9 +26,7 @@
 				<input type="button" name="criar" value="Criar" id="createGroup">
 			</div>
 			<div class="clear"></div>
-			<div class="grid_12"><a href="managementUo.cfm" class="back">&laquo; Voltar para a lista de grupos</a></div>
-			<div class="clear"></div>
-			<div class="grid_12 content"></div>
+			<div class="grid_12"><a href="javascript:void(0);" class="back">&laquo; Voltar para a lista de grupos</a></div>
 			<div class="clear"></div>
 		</div>
 	</form>
@@ -37,7 +35,7 @@
 <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="js/livequery/jquery.livequery.js"></script>
 <script type="text/javascript" src="js/jalert/jquery.alerts.js"></script>
-<script type="text/javascript" src="js/addGroupUo.js"></script>
+<script type="text/javascript" src="js/addGroupUo.js.js"></script>
 
 </body>
 </html>

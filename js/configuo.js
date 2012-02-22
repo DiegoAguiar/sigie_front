@@ -8,7 +8,7 @@ $(document).ready(function() {
 	$("a.fancylt").livequery(function(){
 		$("a.fancylt").fancybox({
 			'width'				: '55%',
-			'height'			: '35%',
+			'height'			: '10%',
 			'autoScale'			: false,
 			'transitionIn'		: 'none',
 			'transitionOut'		: 'none',
@@ -24,11 +24,11 @@ $(document).ready(function() {
 		});
 	});
 			
-	$(".checkListConf").click(function(){
+	$('.checkListConf').click(function(){
 		var load=$(this).attr('id');
 		$.ajax({
 			type:'POST',
-			url:'groupConf.cfm',
+			url:"checkListConf.cfm",
 			cache:false,
 			data:{'item':load},
 			beforeSend:function(){
@@ -46,48 +46,17 @@ $(document).ready(function() {
 		});
 	});
 	
-	$(".checkList").livequery("click",function(){
-		var load=$(this).attr('id');
-		$.ajax({
-			type:'POST',
-			url:'checkListConf.cfm',
-			cache:false,
-			data:{'item':load},
-			beforeSend:function(){
-				$('#dContent').html('Carregando');
-			},
-			success: function(data){
-				$('#dContent').html(data);	
-			},
-			error: function(erro){
-				$('#dContent').html(erro);	
-			}/*,
-			complete: function(){
-				$('#carregando').fadeOut();
-			}*/
-		});
-	});
-	
-	$(".rmView").livequery("mouseover",function(){
+	$('.rmView').livequery('mouseover',function(){
 		$(this).css("background-color","#f4f4f4");
 		$(this).children(".remove").css("visibility","visible");
 	});
 	
-	$(".rmView").livequery("mouseout",function(){
+	$('.rmView').livequery('mouseout',function(){
 		$(this).css("background-color","#ffffff");
 		$(this).children(".remove").css("visibility","hidden");
 	});
 	
-	$(".remove").livequery("click",function(){
+	$('.remove').livequery('click',function(){
 		parent.jConfirm("Deseja Realmente remover a conta?","Excluir Iten",function(resp){alert(resp);});
-	});
-	
-	$(".expand").livequery("click",function(){
-		if($(this).children(".detCheckList").css("display")=="none"){
-			$(this).children(".detCheckList").fadeIn();
-		}
-		else{
-			$(this).children(".detCheckList").fadeOut();
-		}
 	});
 });

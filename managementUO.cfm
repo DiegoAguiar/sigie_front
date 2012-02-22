@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container_12">
-	<form name="form1" method="post" action="managementUoAct.cfm">
+	<form name="form1" method="post" action="/SIGIE/managementUoAct.cfm">
 		<div class="graymenu">
 			<div class="grid_12">Gerenciamento de grupos de Unidades Operacionais</div>
 			<div class="clear"></div>
@@ -41,7 +41,7 @@
 			<div class="grid_5">
 				<select id="box1View" multiple="multiple" size="13" name="box1View"></select>
 			</div>
-			<div class="grid_2 alpha omega">
+			<div class="grid_2">
 				<button id="to2" type="button">&nbsp;>&nbsp;</button>
 				<button id="to1" type="button">&nbsp;<&nbsp;</button>
 			</div>
