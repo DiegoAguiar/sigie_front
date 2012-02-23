@@ -4,7 +4,7 @@
 		<div class="title">Lista de Unidades Operacionais</div>
 		<ul>
 			<li>
-				Grupo 1
+				<span class="title">Grupo 1</span>
 				<ul>
 					<li><a href="javascript:void(0);" id="71" class="checkListConf">71 - Bertioga</a></li>
 					<li><a href="javascript:void(0);" id="62" class="checkListConf">62 - Paraiso</a></li>

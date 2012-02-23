@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,7 +15,7 @@
 <body>
 <div class="container_12">
 	<div class="grid_12">
-		<h1>CabeÃ§alho</h1>
+		<h1>Cabeçalho</h1>
 	</div>
 	<div class="clear"></div>
 	<cfinclude template="navigation.cfm">
@@ -24,12 +24,16 @@
 	<div class="clear"></div>
 	
 	<div class="grid_12">
-		<!--- #getCaminho(page=)# --->Home >> AdministraÃ§Ã£o >> Gerenciamento de Unidades
+		<!--- #getCaminho(page=)# --->Home >> Administração >> Gerenciamento de Unidades
 	</div>
 	<div class="clear"></div>
 	<div class="grid_12">&nbsp;</div>
 	<div class="clear"></div>
-	<cfinclude template="leftMenu.cfm">
+	<cfif Structkeyexists(url,"module") and url.module eq 1>
+		<cfinclude template="listGroups.cfm">
+	<cfelseif Structkeyexists(url,"module") and url.module eq 2>
+		<cfinclude template="listCheckListItens.cfm">
+	</cfif>
 	<div class="grid_9 omega" id="dContent"></div>
 	<div class="clear"></div>
 </div>

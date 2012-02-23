@@ -14,12 +14,13 @@
 </div>
 <div>
 	<div>
-		Contas adicionadas separadamente: 
-		<span class="add">
-			<a href="addCount.cfm" class="fancylt">
-				Adicionar nova conta
-			</a>
-		</span>
+		<div class="underlined">Contas adicionadas separadamente: 
+			<span class="add">
+				<a href="addCount.cfm" class="fancylt">
+					Adicionar nova conta
+				</a>
+			</span>
+		</div>
 		<ul>
 			<li class="rmView">
 				1.0.1 Análise e controle de água e piscina  (avulsa / sem contrato) 

@@ -1,5 +1,12 @@
 $(document).ready(function(){
 	
+	$(".GpUos").multiselect({
+		header:false,
+		noneSelectedText:"Selecione",
+		selectedList: 1,
+		multiple:false
+	}).multiselectfilter();
+	
 	$('#selectGroup').click(function(){
 		var gp=$('.GpUos :selected').val();
 		$.ajax({

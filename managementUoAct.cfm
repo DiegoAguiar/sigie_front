@@ -6,7 +6,7 @@
 		<select id="box1Storage">
 		</select>
 	</div>
-	<div class="grid_2">
+	<div class="grid_2 alpha omega">
 		<button id="to2" type="button">&nbsp;>&nbsp;</button>
 		<button id="to1" type="button">&nbsp;<&nbsp;</button>
 	</div>

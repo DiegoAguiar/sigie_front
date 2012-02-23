@@ -13,21 +13,29 @@
 </head>
 <body>
 <div class="container_12">
-	<form name="form" action="addCountAct.cfm">
-		<div class="grid_12"><span class="title">Adicionar conta</span></div>
+	<form name="form" action="">
+		<div class="grid_12"><span class="title">Adicionar modelo de conta</span></div>
 		<div class="clear"></div>
-		<div class="grid_12 boxUos">
+		<div class="grid_12">
+			Nome:
+		</div>
+		<div class="clear"></div>
+		<div class="grid_12">
+			<input type="text" name="countModelName" id="countModelName">
+		</div>
+		<div class="clear"></div>
+		<div class="grid_12">
+			Conta anexada:
+		</div>
+		<div class="clear"></div>
+		<div class="grid_12">
 			<select name="count" class="count" multiple="multiple">
-				<optgroup label="1 - Manutenção Prioritária">
-					<option value="1">1 Manutenção de bebedouros (limpeza, assepsia, troca de filtros e etc)</option>
-					<option value="1">1 Manutenção de bebedouros (limpeza, assepsia, troca de filtros e etc)</option>
+				<optgroup label="1 - Básico">
+					<option value="1">Água</option>
+					<option value="2">Luz</option>
 				</optgroup>
 				<optgroup label="2 - Manutenção">
 					<option value="2">2 Manutenção</option>
-					<option value="3">3 Manutenção</option>
-					<option value="4">4 Manutenção</option>
-					<option value="5">5 Manutenção</option>
-					<option value="6">6 Manutenção</option>
 				</optgroup>
 			</select>
 		</div>
@@ -45,6 +53,7 @@
 <script language="javascript" src="js/jquery-ui/js/jquery-ui-1.8.17.custom.min.js"></script>
 <script language="javascript" src="js/multiselect/src/jquery.multiselect.js"></script>
 <script language="javascript" src="js/multiselect/src/jquery.multiselect.filter.js"></script>
-<script type="text/javascript" src="js/addCount.js"></script>
+<script language="javascript" src="js/addCountModel.js"></script>
+
 </body>
 </html>

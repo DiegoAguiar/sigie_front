@@ -24,21 +24,39 @@ $(document).ready(function() {
 		});
 	});
 			
-	$(".checkListConf").click(function(){
+	$(".model").click(function(){
 		var load=$(this).attr('id');
 		$.ajax({
 			type:'POST',
-			url:'groupConf.cfm',
+			url:'fieldManagement.cfm',
 			cache:false,
 			data:{'item':load},
 			beforeSend:function(){
-				$('#dContent').html('Carregando');
+				$('#cContent').html('Carregando');
 			},
 			success: function(data){
-				$('#dContent').html(data);	
+				$('#cContent').html(data);	
 			},
 			error: function(erro){
-				$('#dContent').html(erro);	
+				$('#cContent').html(erro);	
+			}/*,
+			complete: function(){
+				$('#carregando').fadeOut();
+			}*/
+		});
+		$.ajax({
+			type:'POST',
+			url:'attachmentCount.cfm',
+			cache:false,
+			data:{'item':load},
+			beforeSend:function(){
+				$('#rContent').html('Carregando');
+			},
+			success: function(data){
+				$('#rContent').html(data);	
+			},
+			error: function(erro){
+				$('#rContent').html(erro);	
 			}/*,
 			complete: function(){
 				$('#carregando').fadeOut();
@@ -83,11 +101,11 @@ $(document).ready(function() {
 	});
 	
 	$(".expand").livequery("click",function(){
-		if($(this).children(".detCheckList").css("display")=="none"){
-			$(this).children(".detCheckList").fadeIn();
+		if($(".expandForm").css("display")=="none"){
+			$(".expandForm").slideDown();
 		}
 		else{
-			$(this).children(".detCheckList").fadeOut();
+			$(".expandForm").slideUp();
 		}
 	});
 });
